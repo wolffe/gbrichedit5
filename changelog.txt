@@ -1,0 +1,80 @@
+=== gbRichEdit5 ===
+Requirements: jQuery
+Stable tag: 5.9.3
+
+== Changelog ==
+
+= 5.9.3 =
+* Updated jQuery (3.1.1 -> 3.3.1)
+* Removed jQuery Migrate
+* Removed deprecated Youtube and Vimeo code
+
+= 5.9.2 =
+* Updated FontAwesome (4.6.3 -> 4.7.0)
+* Added jQuery Migrate
+* Removed Google Fonts dependency
+
+= 5.9.1 =
+* Updated FontAwesome (4.6.1 -> 4.6.3)
+* Removed onkeyup() event for Iframe height (better performance)
+
+= 5.9.0 =
+* Updated jQuery (1.11.3 -> 2.2.3) for better compatibility
+* Updated FontAwesome (4.4.0 -> 4.6.1)
+* Updated http:// to https:// for all external links
+
+= 5.8 =
+* Updated jQuery (2.1.1 -> 1.11.3) for better compatibility
+* Updated FontAwesome (4.2.0 -> 4.4.0)
+* Updated HTTP links to point to HTTPS
+* Updated documentation and included files
+* Added demo
+
+= 5.7 =
+* Removed jQuery support for IE 6, 7 and 8
+* Removed all images (replaced them with FontAwesome)
+* Updated jQuery (1.11.1 -> 2.1.1)
+
+= 5.6 =
+* Updated jQuery (1.10.1 -> 1.11.1)
+* Updated CSS styles
+* Updated HTML5 behaviour
+
+= 5.5 =
+* Updated jQuery (1.9.1 -> 1.10.1)
+* Removed empty line break in textarea
+
+= 5.4 =
+* Updated jQuery (1.8.1 -> 1.9.1)
+* Plugin is not compatible with jQuery versions lower than 1.9.x
+* Added Bootstrap styles for buttons
+* Changed some icons for a better visual style
+* Changed demo files
+* Optimized .js file and removed lots of try/catch routines
+* Removed minification (12k script)
+
+= 5.3 =
+* Updated jQuery (1.7.2 -> 1.8.1)
+* Minified code using UglifyJS (used for jQuery)
+* Added Youtube embed
+* Added Vimeo embed
+* Added more buttons (underline, strikethrough, superscript, subscript, horizontal rule)
+* Added more buttons (justification - left, center, right, full)
+* Added new height option (also increased its value to 250)
+* Fixed folder name and documentation ('gbRichEdit5' instead of 'gbRichEdit')
+* Implemented new documentation style
+* Merged documentation with index.html file
+
+= 5.2 =
+* Updated jQuery (1.7.1 -> 1.7.2)
+* Updated CSS
+* Updated documentation
+* Added instructions for WordPress
+
+= 5.1 =
+* Updated jQuery (1.6.4 -> 1.7.1)
+* Optimized speed (gained a few milliseconds)
+* Added changelog file
+
+= 5 =
+* First release

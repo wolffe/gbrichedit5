@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>gbRichEdit5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- BEGIN gbRichEdit5 -->
+<link rel="stylesheet" href="gre/gre.css">
+<script src="gre/jquery.gre.js"></script>
+<script>
+$(document).ready(function () {
+	$('.gre').gre({
+		content_css_url: 'gre/gre.css',
+		height: 250
+	});
+	$('.gre-1').gre({ content_css_url: 'gre/gre.css', height: 250 });
+	$('.gre-2').gre({ content_css_url: 'gre/gre.css', height: 250 });
+});
+</script>
+<!-- END gbRichEdit5 -->
+
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 15px;
+	color: #eeeeee;
+    font-weight: 400;
+    background-color: #444444;
+    margin: 0; padding: 0;
+}
+a { color: #ffffff; }
+#content { width: 768px; margin: 0 auto; padding: 24px; box-shadow: 0 0 64px rgba(0, 0, 0, 0.25); background-color: rgba(0, 0, 0, 0.5); }
+b, strong, h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+h2 { font-weight: 300; font-size: 28px; }
+
+.heading { font-size: 32px; font-weight: 300; }
+</style>
+</head>
+
+<body>
+<section id="content">
+	<div class="container">
+		<section id="grid" class="clearfix">
+			<div class="grid-full">
+				<h2 class="heading">gbRichEdit5 | <i class="fa fa-html5"></i> HTML5 Rich Text Editor</h2>
+				<p><small>Version <strong>5.9.2</strong></small></p>
+				<p><strong>gbRichEdit5</strong> is a rich text editor plugin for jQuery, easy to attach to HTML textarea elements. It creates the most basic editing options such as bold text, italic text, ordered and unordered list, link and image insertion. The plugin also features an HTML button for easy switching to source view.</p>
+				<p><strong>gbRichEdit5</strong> is HTML5 compliant and uses the latest version of jQuery.</p>
+			</div>
+
+			<div class="grid-full">
+				<h2 class="sub-heading">Example</h2>
+				<textarea id="udescription" name="udescription" class="gre" rows="50"></textarea>
+
+				<h2 class="sub-heading">Features</h2>
+				<ul>
+					<li>HTML5 compliant</li>
+					<li>Design mode and source mode (HTML)</li>
+					<li>Supports multiple textareas on the same page by using separate IDs</li>
+					<li>Light and fast</li>
+					<li>Transparent</li>
+				</ul>
+
+                <p><textarea id="udescription2" name="udescription2" class="gre" rows="50"></textarea></p>
+                <p><textarea id="udescription3" name="udescription3" class="gre" rows="50"></textarea></p>
+			</div>
+
+			<div class="grid-full">
+				<h2 class="sub-heading">How to use</h2>
+				<p>Add the following code to the head of your document:</p>
+				<p><pre><code>
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- BEGIN gbRichEdit5 --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;gre/gre.css&quot;&gt;
+&lt;script src=&quot;gre/jquery.gre.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;$(document).ready(function(){ $('.gre').gre(); });&lt;/script&gt;
+&lt;!-- END gbRichEdit5 --&gt;
+				</code></pre></p>
+				<p>Replace <code><b>$</b></code> with <code><b>jQuery</b></code> for use with WordPress, inside the <code>$(document).ready()</code> function, like this:</p>
+				<p><code>&lt;script&gt;<b>jQuery</b>(document).ready(function(){ <b>jQuery</b>('.gre').gre(); });&lt;/script&gt;</code></p>
+				<p>Add your textarea element and attach the <strong>gre</strong> class:</p>
+				<p><code>&lt;textarea id=&quot;udescription&quot; name=&quot;udescription&quot; class=&quot;gre&quot;&gt;&lt;/textarea&gt;</code></p>
+			</div>
+
+			<hr>
+			<div class="grid-half">
+				<h2 class="sub-heading">Available (default) options</h2>
+				<p><pre><code>
+$(document).ready(function(){
+	$('.gre').gre({
+		content_css_url: 'gre/gre.css',
+		height: 250
+	});
+});
+				</code></pre></p>
+			</div>
+
+			<div class="grid-half">
+				<h2 class="sub-heading">Available (default) options (for WordPress)</h2>
+				<p>Use this version for use with WordPress, inside plugins or themes administration areas.</p>
+				<p><pre><code>
+<b>jQuery</b>(document).ready(function(){
+	<b>jQuery</b>('.gre').gre({
+		content_css_url: 'gre/gre.css',
+		height: 250
+	});
+});
+				</code></pre></p>
+			</div>
+			<hr>
+
+			<div class="grid-full">
+				<h2 class="sub-heading">How to add a block of HTML code</h2>
+				<p>Use the HTML button to insert any HTML code. The popup box will accept all tags, and you can even code embed codes for any other video network.</p>
+
+				<h2 class="sub-heading">Available formatting options</h2>
+				<ul>
+					<li>bold, italic, underlined text, ordered, unordered list, justification (left, center, right, full)</li>
+					<li>strikethrough, superscript, subscript, horizontal rule</li>
+					<li>link (insert link URL), image (insert image URL)</li>
+					<li>HTML mode/visual mode</li>
+				</ul>
+
+				<h2 class="sub-heading">Where to use gbRichEdit5?</h2>
+				<ul>
+					<li>Use <strong>gbRichEdit5</strong> for a personal CMS</li>
+					<li>Use <strong>gbRichEdit5</strong> for your own administration panel</li>
+					<li>Use <strong>gbRichEdit5</strong> for your own comment section</li>
+					<li>Replace other bloated editors</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="grid-full">
+			<p>Created by <a href="https://getbutterfly.com/">getButterfly</a> - Have fun!</p>
+		</footer>
+	</div>
+</section>
+</body>
+</html>
